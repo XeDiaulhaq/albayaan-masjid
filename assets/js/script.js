@@ -1,11 +1,11 @@
-function getJadwalSholat(city) {
-    fetch(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Indonesia&method=8`)
+function getJadwalSholat() {
+    fetch('http://api.aladhan.com/v1/timingsByCity?city=Lhokseumawe&country=Indonesia&method=2')
     .then(response => response.json())
     .then(data => {
         const jadwalSholat = data.data.timings;
 
         // Mengisi nilai jadwal sholat ke dalam elemen HTML yang sesuai
-        document.querySelector('.card-title').innerHTML = `<i class="bi bi-geo-alt-fill m-2"></i>${city}   ${data.data.date.gregorian.date}`;
+        document.querySelector('.card-title').innerHTML = `<i class="bi bi-geo-alt-fill m-2"></i>Lhokseumawe - ${data.data.date.gregorian.date}`;
         document.querySelector('.Imsak span').textContent = jadwalSholat.Imsak;
         document.querySelector('.Subuh span').textContent = jadwalSholat.Fajr;
         document.querySelector('.Dhuzur span').textContent = jadwalSholat.Dhuhr;
@@ -18,5 +18,5 @@ function getJadwalSholat(city) {
     });
 }
 
-// Panggil fungsi getJadwalSholat dengan nama kota yang diinginkan
-getJadwalSholat("Lhokseumawe"); // Misalnya "Lhokseumawe" sebagai contoh
+// Panggil fungsi getJadwalSholat untuk mengambil jadwal sholat di Lhokseumawe, Aceh
+getJadwalSholat();
