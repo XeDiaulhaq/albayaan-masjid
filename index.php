@@ -13,9 +13,12 @@
 </head>
 
 <body>
-    <div class="row">
+    <?php
+    include ""
+    ?>
+    <div class="navmain row">
         <div class="col-4"></div>
-        <div class="col-4">
+        <div class=" col-4">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid justify-content-center">
                     <a class="navbar-brand justify-content-center" href="#"><a
@@ -34,7 +37,7 @@
                 </div>
             </nav>
         </div>
-        <div class="col-4 text-center center-content">
+        <div class=" col-4 text-center center-content">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid justify-content-center">
                     <div class="dropdown">
@@ -51,7 +54,6 @@
                 </div>
             </nav>
         </div>
-    </div>
     </div>
     <!-- Nav End -->
     <!-- Nav2 -->
