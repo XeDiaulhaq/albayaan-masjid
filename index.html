@@ -13,103 +13,102 @@
 </head>
 
 <body>
-    <?php
-    include ""
-    ?>
-    <div class="navmain row">
-        <div class="col-4"></div>
-        <div class=" col-4">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid justify-content-center">
-                    <a class="navbar-brand justify-content-center" href="#"><a
-                            class="navbar-brand d-flex align-items-center" href="#">
-                            <img src="/assets/image/masjid.png" alt="Logo" width="68" height="54"
-                                class="d-inline-block align-text-top">
-                            <span class="ms-2">MASJID AL-BAYAAN </span></a>
-                        <!-- <a class="nav-link ms-5" href="#">
-                        Login
-                    </a> -->
-                        <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button class="dropdown-item" type="button">Action</button>
-                            <button class="dropdown-item" type="button">Another action</button>
-                            <button class="dropdown-item" type="button">Something else here</button>
-                        </div> -->
-                </div>
-            </nav>
-        </div>
-        <div class=" col-4 text-center center-content">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid justify-content-center">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Username
+    <div class="navbar1">
+        <div class="navmain row">
+            <div class=" col-4"></div>
+            <div class=" col-4">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid justify-content-center">
+                        <a class="navbar-brand justify-content-center" href="#"><a
+                                class="navbar-brand d-flex align-items-center" href="#">
+                                <img src="/assets/image/masjid.png" alt="Logo" width="68" height="54"
+                                    class="d-inline-block align-text-top">
+                                <span class="ms-2">MASJID AL-BAYAAN </span></a>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">PROFIL</a></li>
-                            <li><a class="dropdown-item" href="#">SETTING</a></li>
-                            <li><a class="dropdown-item" href="#">LOG OUT</a></li>
-                        </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+            <div class=" col-4 text-center center-content">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid justify-content-center">
+                        <div class="dropdown">
+                            <a class="navbar-brand dropdown mt-2" href="login.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Login
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">PROFIL</a></li>
+                                <li><a class="dropdown-item" href="#">SETTING</a></li>
+                                <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
     <!-- Nav End -->
     <!-- Nav2 -->
-    <div class=" navbar2">
-        <div class=" nav-menu">
+    <div class="navbar2">
 
-
-            <div class="dropdown">
-                <a class="dropdown" style="border-bottom: 1px solid;" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    BERANDA
-                </a>
-
-
+        <nav class="nav-menu navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon position-relative"></span>Menu
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">dashboard
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#" style="border-bottom: 1px solid;">BERANDA</a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfil" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PROFIL
+                                </a>
+                                <ul class="dropdown-menu aria-labelledby=" id="navbarDropdownProfil">
+                                    <li><a class="dropdown-item" href="/profil/visi.html">VISI DAN MISI</a></li>
+                                    <li><a class="dropdown-item" href="#">SEJARAH</a></li>
+                                    <li><a class="dropdown-item" href="#">IMAM DAN MUADZIN</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBerita" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    BERITA
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownBerita">
+                                    <li><a class="dropdown-item" href="/berita/tatalaksana.html">TATA LAKSANA JUMAT</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">ARTIKEL</a></li>
+                                    <li><a class="dropdown-item" href="#">AGENDA</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLayanan" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    LAYANAN
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownLayanan">
+                                    <li><a class="dropdown-item" href="#">DONASI DAN ZAKAT</a></li>
+                                    <li><a class="dropdown-item" href="#">KONSULTASI AGAMA</a></li>
+                                    <li><a class="dropdown-item" href="#">FORUM DISKUSI</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="dropdown">
-                <a class="dropdown " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PROFIL
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">VISI DAN MISI</a></li>
-                    <li><a class="dropdown-item" href="#">SEJARAH</a></li>
-                    <li><a class="dropdown-item" href="#">IMAM DAN MUADZIN</a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <a class="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    BERITA
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">TATA LAKSANA JUMAT</a></li>
-                    <li><a class="dropdown-item" href="#">ARTIKEL</a></li>
-                    <li><a class="dropdown-item" href="#">AGENDA</a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <a class="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    LAYANAN
-                </a>
-
-                <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item" href="#">DONASI DAN ZAKAT</a></li>
-                    <li><a class="dropdown-item" href="#">KONSULTASI AGAMA</a></li>
-                    <li><a class="dropdown-item" href="#">FORUM DISKUSI</a></li>
-                </ul>
-            </div>
-
-
-        </div>
+        </nav>
     </div>
     <div class="navbar3 container-fluid">
         <div class="row">
-            <div class="col- ">
-                <div class="container-sm col">
+            <div class="col ">
+                <div class="container-sm">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -145,6 +144,8 @@
 
             </div>
         </div>
+    </div>
+    <div class="navbar4">
         <div class="row m-2 mt-2 p-2">
             <div class="col-8">
 
@@ -296,83 +297,81 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
-                <div class="col bg-body float-end mt-2">
-                    <div class="card">
-                        <div class="card-header">ISLAMIC CONTENT</div>
+                <div class="col bg-denger">
+                    <div class="card mt-2">
+                        <div class="card-header ">Islamic Content</div>
                         <div class="card-body">
                             <h5 class="card-title">Islamic Content</h5>
                             <p class="card-text">
-                            <ul>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos soluta fuga
-                                dolorum impora sequi rem corporis optio iusto voluptate expedita?
-                                Accusantium repellat corrupti maxime nostrum voluptatem inventore.
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Voluptatem eos soluta fuga
+                                    dolorum impora sequi rem corporis optio iusto voluptate expedita?
+                                    Accusantium repellat corrupti maxime nostrum voluptatem inventore.</li>
                             </ul>
                             </p>
                         </div>
                     </div>
-
                 </div>
-
-                <div class="col bg-body float-end mt-2">
-                    <div class="card">
-                        <div class="card-header">ISLAMIC CONTENT</div>
+                <div class="col bg-denger">
+                    <div class="card mt-2">
+                        <div class="card-header ">Islamic Content</div>
                         <div class="card-body">
                             <h5 class="card-title">Islamic Content</h5>
                             <p class="card-text">
-                            <ul>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos soluta fuga
-                                dolorum impora sequi rem corporis optio iusto voluptate expedita?
-                                Accusantium repellat corrupti maxime nostrum voluptatem inventore.
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Voluptatem eos soluta fuga
+                                    dolorum impora sequi rem corporis optio iusto voluptate expedita?
+                                    Accusantium repellat corrupti maxime nostrum voluptatem inventore.</li>
                             </ul>
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-        <p></p>
-        <div class="fut text-center bg-light py-2">
-            Copyright 2024 Masjid Al-Bayaan | <a href="#" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop">Contact
-                Me</a>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen-lg-down">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Text Here</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
+    <p></p>
+    <div class="fut text-center bg-light py-2">
+        Copyright 2024 Masjid Al-Bayaan | <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact
+            Me</a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-lg-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Text Here</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

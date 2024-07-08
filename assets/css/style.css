@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-:root{
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-}
 
 
 .questrial-regular {
@@ -11,55 +7,62 @@
     font-style: normal;
 }
 
+body {
+    font-family: "Questrial", sans-serif;
+}
+
+.navbar1 {
+    background-color: #ff0000;
+}
+
+.navbar2 {
+    background-color: #d400ff;
+    /* Warna latar belakang navbar */
+    display: flex;
+    justify-content: center;
+
+    /* Padding agar konten tidak terlalu rapat */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar2 .nav-menu {
+    display: flex;
+    gap: 18px;
+    /* Jarak antar link */
+}
+
+.navbar3 {
+    background-color: #0080ff;
+}
+
+.navbar4 {
+    background-color: #7bff00;
+}
+
 .navmain {
     font-family: "Questrial", sans-serif;
     font-size: 18px;
-    text-decoration: underline;
-
-
 }
 
 .nav-menu a {
     text-decoration: none;
     color: #000000;
-    font-size: 15px;
-    padding: 10px 15px;
+    font-size: 16px;
+    padding: 10px 12px;
     cursor: pointer;
 }
 
 .nav-menu a:hover {
     border-bottom: 1px solid;
 }
-
-
-.navbar2 {
-    font-size: 20px;
-    background-color: #f8f9fa;
-    /* Warna latar belakang navbar */
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    /* Padding agar konten tidak terlalu rapat */
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-.navbar3{
-    background-color: #f8f9fa;
-}
-
-
-
-.navbar2 .nav-menu {
-    display: flex;
-    gap: 15px;
-    /* Jarak antar link */
-}
-
 p {
+    font-family: 'Times New Roman', Times, serif;
     text-align: justify;
     font-size: medium;
 }
+
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -80,14 +83,17 @@ p {
 
 
 .dropdown-menu-end {
-    margin-left: 20px; /* Menambahkan jarak antara text dan dropdown */
+    margin-left: 20px;
+    /* Menambahkan jarak antara text dan dropdown */
 }
+
 .center-content {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
+
 .dropdown-menu {
     display: none;
     transition: visibility 0.5s, opacity 0.s linear;
